@@ -57,7 +57,13 @@ const checkInput = () => {
     }
 }
 
-//events 
+//event for click
 ball.addEventListener('click', () => {
     addAnimation(ball);
-})
+});
+//event for enter
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    addAnimation(ball);
+  }
+});
